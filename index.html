@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title>Tablesorter Demo - Jeff Reifman</title>
+  <script type="text/javascript" src="./js/jquery-latest.js"></script>
+    <script type="text/javascript" src="./js/jquery.tablesorter.min.js"></script>
+
+  </head>
+  <body>
+    <h1>Tablesorter Demo</h1>
+
+    <table id="domainsTable" class="">
+    <thead>
+    <tr>
+        <th>Domain name</th>
+        <th>gTld</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Contact</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="http://geogram.co">geogram.co</a></td><td>co</td><td>Internet</td><td>$49</td><td><a href="mailto:jeff@lookahead.io?subject=Offer for domain name: geogram.co">Purchase</a></td></tr>
+      <tr><td><a href="http://newscloud.com">newscloud.com</a></td><td>com</td><td>News</td><td>$19999</td><td><a href="mailto:jeff@lookahead.io?subject=Offer for domain name: newscloud.com">Purchase</a></td></tr>
+
+</tbody>
+    </table>
+    <script>
+    $(document).ready(function()
+        {
+            $("#domainsTable").tablesorter({sortList: [[3,1],[2,0]]});
+        }
+    );
+    </script>
+    </body>
+</html>
